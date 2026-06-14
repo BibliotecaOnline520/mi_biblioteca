@@ -1,14 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Biblioteca</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(
-        135deg,
-        #ff0080,
-        #7928ca,
-        #2afadf,
-        #00ff88
-    );
-    background-size: 400% 400%;
-    animation: fondo 10s ease infinite;
+    background: linear-gradient(135deg, #141e30, #243b55);
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -16,36 +22,30 @@ body{
     color:white;
 }
 
-@keyframes fondo{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
 .caja{
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
     padding:40px;
-    border-radius:25px;
+    border-radius:20px;
+    width:90%;
+    max-width:500px;
     text-align:center;
-    box-shadow:0 0 30px rgba(255,255,255,0.3);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 h1{
-    font-size:50px;
-    background: linear-gradient(90deg,#ffea00,#ff8800,#ff0080);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    font-size:45px;
+    margin-bottom:15px;
 }
 
 p{
-    font-size:20px;
-    color:white;
+    color:#ddd;
+    margin-bottom:25px;
+    font-size:18px;
 }
 
 button{
-    background: linear-gradient(45deg,#ffea00,#ff0080,#00e5ff);
-    color:white;
+    background: linear-gradient(45deg,#ffd700,#ff9900);
     border:none;
     padding:15px 30px;
     border-radius:30px;
@@ -55,5 +55,28 @@ button{
 }
 
 button:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
 }
+
+.libros{
+    margin-top:25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="caja">
+    <h1>📚 Mi Biblioteca</h1>
+
+    <p>Explora historias, aventuras y libros en línea.</p>
+
+    <div class="libros">
+        <a href="libro1.html">
+            <button>📖 Leer Libro 1</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
