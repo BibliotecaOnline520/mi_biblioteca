@@ -5,41 +5,56 @@
 
     <style>
         body {
-            background-color: #111;
+            font-family: Arial;
+            background-color: #0f0f0f;
             color: white;
             text-align: center;
-            font-family: Arial;
+            padding: 40px;
         }
 
         h1 {
             color: gold;
-            margin-top: 50px;
+            font-size: 40px;
+        }
+
+        .caja {
+            background: #1c1c1c;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
         }
 
         button {
-            background-color: gold;
-            border: none;
             padding: 15px 25px;
             font-size: 18px;
+            background: gold;
+            border: none;
             cursor: pointer;
             margin-top: 20px;
         }
 
         button:hover {
-            background-color: orange;
+            background: orange;
+        }
+
+        p {
+            color: #ccc;
         }
     </style>
-
 </head>
+
 <body>
 
-    <h1>Mi Biblioteca</h1>
+    <h1>📚 Mi Biblioteca</h1>
 
-    <p>Bienvenido a mis historias</p>
+    <div class="caja">
+        <p>Bienvenido a mi plataforma de historias</p>
 
-    <a href="libro1.html">
-    <button>Leer libro</button>
-</a>
+        <a href="libro1.html">
+            <button>Leer primer libro</button>
+        </a>
+    </div>
 
 </body>
 </html>
