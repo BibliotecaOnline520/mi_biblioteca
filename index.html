@@ -13,52 +13,59 @@
 }
 
 body{
-body{
-
-body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff2d75, #d6005f);
+    background: linear-gradient(135deg, #ff0080, #c80064);
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     color:white;
 }
-caja{
-    background: #e91e63;
-    padding:40px;
-    border-radius:20px;
+
+.caja{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    padding:50px;
+    border-radius:25px;
     width:90%;
-    max-width:500px;
+    max-width:600px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
 
 h1{
-    font-size:45px;
+    font-size:50px;
     margin-bottom:15px;
 }
 
 p{
-    color:#ddd;
-    margin-bottom:25px;
-    font-size:18px;
+    color:#f5f5f5;
+    margin-bottom:30px;
+    font-size:20px;
+}
+
+.libros{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
 }
 
 button{
-   background: linear-gradient(45deg,#ff6b9d,#d94f70);    border:none;
-    padding:15px 30px;
+    background: white;
+    color:#ff0080;
+    border:none;
+    padding:15px 25px;
     border-radius:30px;
     font-size:18px;
+    font-weight:bold;
     cursor:pointer;
     transition:0.3s;
 }
 
 button:hover{
-    transform:scale(1.08);
-}
-
-.libros{
-    margin-top:25px;
+    transform:scale(1.1);
+    box-shadow:0 5px 20px rgba(255,255,255,0.5);
 }
 </style>
 </head>
@@ -68,12 +75,13 @@ button:hover{
 <div class="caja">
     <h1>📚 Mi Biblioteca</h1>
 
-    <p>Explora historias, aventuras y libros en línea.</p>
+    <p>Explora historias, aventuras y mundos increíbles.</p>
 
     <div class="libros">
-        <a href="libro1.html">
-            <button>📖 Leer Libro 1</button>
-        </a>
+        <a href="libro1.html"><button>📖 Libro 1</button></a>
+        <a href="libro2.html"><button>📚 Libro 2</button></a>
+        <a href="#"><button>⭐ Favoritos</button></a>
+        <a href="#"><button>🔥 Populares</button></a>
     </div>
 </div>
 
