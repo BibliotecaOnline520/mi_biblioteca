@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 2</title>
 
     <style>
-        body {
-            font-family: Arial;
-            background-color: #0f0f0f;
-            color: white;
-            text-align: center;
-            padding: 30px;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        .menu {
-            margin-bottom: 20px;
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff0080, #c80064);
+            color:white;
+            text-align:center;
+            min-height:100vh;
+            padding:30px;
         }
 
-        a {
-            color: gold;
-            text-decoration: none;
-            margin: 10px;
+        .menu{
+            margin-bottom:30px;
         }
 
-        .contenido {
-            max-width: 600px;
-            margin: auto;
-            text-align: left;
-            line-height: 1.6;
-            background: #1c1c1c;
-            padding: 20px;
-            border-radius: 10px;
+        .menu a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+            font-weight:bold;
         }
 
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            border: none;
-            background: gold;
+        .menu a:hover{
+            opacity:0.8;
         }
 
-        button:hover {
-            background: orange;
+        h1{
+            font-size:50px;
+            margin-bottom:25px;
+        }
+
+        .contenido{
+            max-width:700px;
+            margin:auto;
+            text-align:left;
+            line-height:1.8;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(15px);
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            font-size:20px;
+        }
+
+        button{
+            margin-top:30px;
+            padding:15px 30px;
+            border:none;
+            border-radius:30px;
+            background:white;
+            color:#ff0080;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform:scale(1.08);
         }
     </style>
 </head>
@@ -50,19 +78,19 @@
 
     <div class="menu">
         <a href="index.html">🏠 Inicio</a>
-        <a href="libro1.html">Capítulo 1</a>
-        <a href="libro2.html">Capítulo 2</a>
+        <a href="libro1.html">📖 Capítulo 1</a>
+        <a href="libro2.html">📚 Capítulo 2</a>
     </div>
 
-    <h1>Capítulo 2</h1>
+    <h1>📚 Capítulo 2</h1>
 
     <div class="contenido">
-        El misterio comenzó a crecer cuando apareció una luz extraña en el cielo...  
+        El misterio comenzó a crecer cuando apareció una luz extraña en el cielo...
         Nadie sabía de dónde venía ni qué significaba.
     </div>
 
     <a href="libro1.html">
-        <button>Capítulo anterior</button>
+        <button>⬅️ Capítulo anterior</button>
     </a>
 
 </body>
